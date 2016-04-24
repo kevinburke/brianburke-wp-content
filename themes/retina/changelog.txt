@@ -1,0 +1,3 @@
+= 0.1 [2011.11.02] =
+
+* First release of Retina WP Theme.

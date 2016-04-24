@@ -1,0 +1,401 @@
+/*
+Theme Name: Retina
+Description: Used to style the TinyMCE editor.
+*/
+
+/*  Retina Stylesheet Guide
+ *
+ * Default Styles
+ *
+ * =Global, =Body, =Blockquote, =Headings, =List, =Text Element, =Anchor
+ * =Images =General Classes, =Table
+ *
+------------------------ */
+
+/*  =Global
+------------------------ */
+
+html .mceContentBody {
+	max-width: 615px;
+}
+
+* {
+	color: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-style: inherit;
+	font-weight: inherit;
+	line-height: 1.5;
+}
+
+/*  =Body
+------------------------ */
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #666;
+}
+
+/*  =Blockquote
+------------------------ */
+
+.mceContentBody blockquote {
+    font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: normal;		
+    color: #808080;
+    background: #f0f0f0 url(images/default/icons/quote-left.png) no-repeat 10px 15px;
+    margin: 0 15px 15px 15px;
+	padding: 0 20px 0 75px;
+	overflow: hidden;	
+	border: 1px solid #d8d9d6;
+	border-bottom: 2px solid #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.mceContentBody blockquote em,
+.mceContentBody blockquote i,
+.mceContentBody blockquote cite {
+	font-style: normal;
+}
+
+.mceContentBody blockquote cite {
+	color: #555;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: block;
+	text-align: right;
+}
+
+.mceContentBody blockquote cite a {
+	display: block;
+	margin: 10px 0 0 0;
+}
+
+/*  =Headings
+------------------------ */
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	color: #222;
+	clear: both;		
+}
+
+h1 { 
+	font-size: 26px;
+	line-height: 1.30;
+	margin-top: 0.692em;
+	margin-bottom: 0.692em;	
+}
+
+h2 { 
+	font-size: 22px;
+	line-height: 1.35;
+	margin-top: .818em;
+	margin-bottom: .818em;	
+}
+
+h3 { 
+	font-size: 18px;
+	line-height: 1.40;
+	margin-top: 1em;
+	margin-bottom: 1em;	
+}
+
+h4 { 
+	font-size: 16px;
+	line-height: 1.45;
+	margin-top: 1.125em;
+	margin-bottom: 1.125em;	
+}
+
+h5 { 
+	font-size: 14px;
+	line-height: 1.50;
+	margin-top: 1.285em;
+	margin-bottom: 1.285em;	
+}
+
+h6 { 
+	font-size: 12px;
+	line-height: 1.55;
+	margin-top: 1.50em;
+	margin-bottom: 1.50em;	
+}
+
+/*  =List
+------------------------ */
+
+ul, ol {
+	margin: 0 0 1.5em 1.5em;
+}
+
+ul {
+	list-style: square;
+}
+
+ul ul {
+	list-style: circle;
+}
+
+ul ul ul {
+	list-style: disc;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+ol ol {
+	list-style: upper-alpha;
+}
+
+ol ol ol {
+	list-style: lower-roman;
+}
+
+ol ol ol ol {
+	list-style: lower-alpha;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+	margin-bottom: 0;
+}
+
+dl {
+	margin: 0 0 1.5em 1.5em
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-bottom: 1.5em;
+}
+
+/*  =Text Elements
+------------------------ */
+
+p { 
+	line-height: 1.5;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+strong {
+	font-weight: bold;
+}
+
+cite, em, i {
+	font-style: italic;
+}
+
+pre {
+	background: #f0f0f0;
+	color: #808080;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 14px;
+	line-height: 1.285;
+	margin-bottom: 1.285em;
+	margin-top: 1.285em;
+	padding: 15px 30px;
+	overflow: auto;	
+	border: 1px solid #d8d9d6;
+	border-bottom: 2px solid #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+code, kbd {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	color: #000;
+}
+
+abbr, acronym, dfn {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+address {
+	display: block;
+}
+
+ins {
+	background: #f0f0f0;
+	text-decoration: none;
+}
+
+sup, sub {
+	font-size: 10px;
+	height: 0;
+	line-height: 1;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+/*  =Anchor
+------------------------ */
+
+a,
+a:visited {
+	color: #072C53;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a img {
+	border: none;
+}
+
+a:focus, a:hover, a:active {
+	outline: none;
+}
+
+/*  =Images
+------------------------ */
+
+p img {
+	padding: 5px;
+	margin-bottom: 1.5em;
+	background: #fff;
+	border: 1px solid #d8d9d6;
+	-webkit-box-shadow: 0px 1px 4px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 0px 1px 4px rgba(50, 50, 50, 0.75);
+	box-shadow: 0px 1px 4px rgba(50, 50, 50, 0.75);
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.entry-content img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+img.alignleft {
+	margin-top: 1.5em;
+	margin-right: 2em;
+}
+
+img.alignright {
+	margin-top: 1.5em;
+	margin-left: 2em;
+}
+
+img.aligncenter,
+img.centered {
+	display: block;
+	margin-top: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.alignnone {
+	display: inline;
+	margin-top: 1.5em;
+}
+
+/*  =General Classes
+------------------------ */
+
+.clear {
+	clear: both;
+	height: 0px;
+	font-size: 0px;
+	line-height: 0px;
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption {
+	padding: 10px 5px;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	background: #fff;
+	border: 1px solid #d8d9d6;
+	-webkit-box-shadow: 0px 1px 4px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 0px 1px 4px rgba(50, 50, 50, 0.75);
+	box-shadow: 0px 1px 4px rgba(50, 50, 50, 0.75);
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.wp-caption img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 1em 1em 0 1em;	
+	font-style: italic;
+}
+
+/*  =Table
+------------------------ */
+
+table { 
+	width: 95%;
+	margin: 5px auto;
+	border-collapse: collapse;
+}
+
+caption {
+	font-weight: bold;
+	margin: 0 0 5px 0;
+}
+
+thead, th {
+	color: #FFF;
+	background-color: #1b1b1b;
+	font-weight: bold;
+	text-align: left;
+}
+
+tbody, td {
+	background-color: #f0f0f0;
+}
+
+td, th { 
+	padding: 5px;
+	border: 1px #ccc solid;
+}
